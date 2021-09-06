@@ -1,0 +1,22 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYl9sb2dpbiIsImlhdCI6MTYwMjA5NTg0MX0.zwHOai7A7-mWorWYLiCloOe0NOfKmztw78kKD_mtk-Y
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+
+{
+    "username": "bob_login"
+}
+
+###
+
+POST http://localhost:3000/newuser
+Content-Type: application/json
+
+{
+    "name":"jacob",
+    "login": "jacob_login",
+    "password": "jacob_password"
+}

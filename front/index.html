@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+
+  <script src="https://kit.fontawesome.com/894fdef4f3.js" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="forms-wrapper">
+
+      <form class="form" id="register-form" hidden>
+        <h1>Register</h1>
+        <div class="form-control">
+          <label for="">Name</label>
+          <input type="text" maxlength="255" id="name" placeholder="your name..." name="name">
+          <div class="icon">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>&nbsp;</small>
+        </div>
+        <div class="form-control">
+          <label for="">Login</label>
+          <input type="text" maxlength="255" id="login" placeholder="your login..." name="login">
+          <div class="icon">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>&nbsp;</small>
+        </div>
+        <div class="form-control">
+          <label for="">Password</label>
+          <input type="password" maxlength="255" id="password" name="password">
+          <div class="icon">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>&nbsp;</small>
+        </div>
+        <div class="form-control">
+          <label for="">Repeat Password</label>
+          <input type="password" maxlength="255" id="repeat-password" name="repeat">
+          <div class="icon">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <small>&nbsp;</small>
+        </div>
+
+
+        <div class="register-form-buttons">
+          <button type="submit" class="btn1">Register</button>
+          <button type="button" class="btn2" onclick="showLoginForm()">Login &#10141; </button>
+        </div>
+      </form>
+
+      <!-- Login form -->
+      <form action="" id="login-form" >
+        <h1>Log in</h1>
+        <div class="form-control">
+          <label>Login</label>
+          <input type="text" maxlength="255" placeholder="your login..." name="login">
+          <small>&nbsp;</small>
+        </div>
+        <div class="form-control">
+          <label>Password</label>
+          <input type="password" maxlength="255" name="password">
+          <small>&nbsp;</small>
+        </div>
+        <div class="register-form-buttons">
+          <button type="button" class="btn2" onclick="showRegisterForm()">&larr; Register</button>
+          <button type="submit" class="btn1">Login</button>
+        </div>
+      </form>
+    </div>
+
+
+
+    <div class="content">
+    </div>
+  </div>
+
+</body>
+
+</html>
